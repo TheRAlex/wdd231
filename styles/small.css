@@ -1,0 +1,259 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #f4f6f5;
+    line-height: 1.5;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* Hamburger */
+
+#menuButton {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+
+/* Navigation */
+
+header nav {
+    display: none;
+    background-color: #263238;
+}
+
+header nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid #455a64;
+    display: block;
+}
+
+header nav a:hover,
+header nav a.active {
+    background-color: #455a64;
+}
+
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+/* Top sections */
+
+.top-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.about p {
+    padding: 0 1rem;
+}
+
+.student-photo {
+    text-align: center;
+}
+
+.photo-container {
+    padding: 1rem;
+    background-color: #eeeeee;
+}
+
+.photo-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+/* Courses */
+
+.certificate {
+    margin-top: 1rem;
+}
+
+.course-filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0.75rem;
+}
+
+.filter {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.filter:hover,
+.active-filter {
+    background-color: #455a64;
+    color: white;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+}
+
+.course {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0.7rem;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.course.completed {
+    background-color: #d8eadf;
+    border: 2px solid #388e3c;
+}
+
+.course h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.course p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
+}
+
+.completed-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.credits {
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.35rem;
+    font-size: 0.8rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}

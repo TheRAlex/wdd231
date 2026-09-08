@@ -1,0 +1,78 @@
+@media screen and (min-width: 700px) {
+
+    header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    header nav li {
+        flex: 1;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        border-bottom: none;
+        border-right: 1px solid #455a64;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .top-content {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .about,
+    .student-photo {
+        min-height: 250px;
+    }
+
+    .photo-container {
+        height: calc(100% - 36px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: 1rem auto 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+   .course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
