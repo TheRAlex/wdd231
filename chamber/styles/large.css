@@ -1,0 +1,46 @@
+@media (min-width: 40rem) {
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .development-info {
+        text-align: right;
+    }
+}
+
+@media (min-width: 64rem) {
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
