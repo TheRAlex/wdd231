@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Comerce | Business Directory</title>
+    <meta name="description" content="Explore Local Business in our Chamber of commerce in our bussiness comunity">
+    <meta name="author" content="Alejandro Cumana">
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
+    <meta property="og:title" content="Chamber of Commerce Business Directory">
+    <meta
+        property="og:description"
+        content="Explore Local Business in our Chamber of commerce in our bussiness comunity."
+    >
+    <meta
+        property="og:image"
+        content="https://TheRAlex.github.io/wdd231/chamber/images/alien.svg"
+    >
+    <meta
+        property="og:url"
+        content="https://TheRAlex.github.io/wdd231/chamber/directory.html"
+    >
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/alien.svg" alt="Chamber of Commerce logo" width="80" height="80">
+
+            <div>
+                <span class="site-name">Chamber of Commerce</span>
+                <span class="site-description">Supporting Local Business</span>
+            </div>
+        </div>
+
+        <button id="menuButton">☰</button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="gridButton" type="button">
+                Grid View
+            </button>
+
+            <button id="listButton" type="button">
+                List View
+            </button>
+        </div>
+
+        <section id="members" class="grid"></section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Chamber of Commerce</strong>
+            <p>123 Main Street</p>
+            <p>City, Chile</p>
+            <p>info@chamber.org</p>
+            <p>+56 2 1234 5678</p>
+        </div>
+
+        <div class="development-info">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Chamber of Commerce
+            </p>
+
+            <p>Alejandro Cumana | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Andes Technology",
+      "address": "Av. Providencia 1234, Santiago, Chile",
+      "phone": "+56 2 2456 1001",
+      "website": "https://example.com",
+      "image": "technology.webp",
+      "membership": 3,
+      "description": "Technology solutions and consulting for local businesses."
+    },
+    {
+      "name": "Pacific Café",
+      "address": "Av. Apoquindo 2210, Santiago, Chile",
+      "phone": "+56 2 2456 1002",
+      "website": "https://example.com",
+      "image": "coffee.webp",
+      "membership": 2,
+      "description": "Local coffee shop specializing in Chilean coffee and pastries."
+    },
+    {
+      "name": "Cordillera Builders",
+      "address": "Los Leones 850, Santiago, Chile",
+      "phone": "+56 2 2456 1003",
+      "website": "https://example.com",
+      "image": "construction.webp",
+      "membership": 3,
+      "description": "Residential and commercial construction services."
+    },
+    {
+      "name": "Austral Travel",
+      "address": "Av. Nueva Providencia 1550, Santiago, Chile",
+      "phone": "+56 2 2456 1004",
+      "website": "https://example.com",
+      "image": "travels.webp",
+      "membership": 1,
+      "description": "Travel agency offering tours throughout Chile."
+    },
+    {
+      "name": "Metro Design Studio",
+      "address": "Av. Italia 720, Santiago, Chile",
+      "phone": "+56 2 2456 1005",
+      "website": "https://example.com",
+      "image": "pictures.webp",
+      "membership": 2,
+      "description": "Graphic design, branding, and digital marketing services."
+    },
+    {
+      "name": "Chile Market",
+      "address": "Av. Irarrázaval 2400, Santiago, Chile",
+      "phone": "+56 2 2456 1006",
+      "website": "https://example.com",
+      "image": "markets.webp",
+      "membership": 1,
+      "description": "Local grocery market offering fresh Chilean products."
+    },
+    {
+      "name": "Summit Finance",
+      "address": "Av. El Bosque 500, Santiago, Chile",
+      "phone": "+56 2 2456 1007",
+      "website": "https://example.com",
+      "image": "finance.webp",
+      "membership": 3,
+      "description": "Financial planning services for individuals and businesses."
+    }
+  ]
+}
