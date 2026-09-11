@@ -37,8 +37,8 @@ function displayMembers(members) {
         image.src = `images/${member.image}`;
         image.alt = `${member.name} business`;
         image.loading = "lazy";
-        image.width = 300;
-        image.height = 200;
+        image.width = 400;
+        image.height = 300;
 
         const name = document.createElement("h2");
         name.textContent = member.name;
@@ -103,9 +103,9 @@ menuButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
 
     if (navigation.classList.contains("open")) {
-        menuButton.textContent = "✕";
+        menuButton.textContent = "✕ Close";
     } else {
-        menuButton.textContent = "☰";
+        menuButton.textContent = "☰ Menu";
     }
 });
 

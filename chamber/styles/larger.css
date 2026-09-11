@@ -1,8 +1,4 @@
 @media (min-width: 40rem) {
-    #members.grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 
     header {
         display: flex;
@@ -40,6 +36,7 @@
 }
 
 @media (min-width: 64rem) {
+
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
