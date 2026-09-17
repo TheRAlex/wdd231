@@ -33,6 +33,24 @@
     .development-info {
         text-align: right;
     }
+    
+    .home-info {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-card {
+        display: flex;
+        flex-direction: column;
+    }
+        
 }
 
 @media (min-width: 64rem) {

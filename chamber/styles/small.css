@@ -185,3 +185,128 @@ footer {
 footer p {
     margin: 0.4rem 0;
 }
+
+/* INDEX CSS*/
+
+.home-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+.hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.join-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.join-button:hover {
+    background-color: var(--secondary-color);
+    color: #111111;
+}
+
+.home-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.events,
+.weather {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.events h2,
+.weather h2,
+.spotlight-section h2 {
+    color: var(--primary-color);
+}
+
+.event-card {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.event-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.current-temp {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+#forecast {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    background-color: var(--background-color);
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+.forecast-day p {
+    margin: 0.2rem 0;
+}
+
+.spotlight-section {
+    margin-top: 2rem;
+}
+
+#spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.spotlight-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+}
+
+.spotlight-card h3 {
+    color: var(--primary-color);
+}
+
+.spotlight-card a {
+    color: #0645ad;
+    font-weight: 600;
+}
