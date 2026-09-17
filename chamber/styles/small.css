@@ -28,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-right: 5rem;
 }
 
 .site-brand img {
@@ -187,13 +188,6 @@ footer p {
 }
 
 /* INDEX CSS*/
-
-.home-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
 
 .hero {
     position: relative;
