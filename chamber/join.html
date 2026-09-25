@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Join the Chamber of Commerce and discover membership opportunities and benefits for local organizations.">
+
+    <meta name="author" content="Alejandro Cumana">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Join the Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore membership levels and join the Chamber of Commerce.">
+    <meta property="og:image"
+        content="https://TheRAlex.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url"
+        content="https://TheRAlex.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+
+            <img src="images/alien.svg"
+                alt="Chamber of Commerce logo"
+                width="80"
+                height="80">
+
+            <div>
+                <span class="site-name">
+                    Santiago Chamber of Commerce
+                </span>
+
+                <span class="site-description">
+                    Supporting Local Business
+                </span>
+            </div>
+
+        </div>
+
+        <button id="menuButton">☰ Menu</button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Join the Chamber</h1>
+
+        <div class="join-layout">
+
+            <section class="application-section">
+
+                <h2>Membership Application</h2>
+
+                <form method="get"
+                    action="thankyou.html"
+                    class="join-form">
+
+                    <label>
+                        First Name
+                        <input type="text"
+                            id="firstName"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text"
+                            id="lastName"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text"
+                            id="organizationTitle"
+                            name="organizationTitle"
+                            title="Enter at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z -]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+                    <label>
+                        Mobile Phone
+                        <input type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business or Organization Name
+                        <input type="text"
+                            id="organization"
+                            name="organization"
+                            title="Enter the name of your organization"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select id="membership"
+                            name="membership"
+                            title="Select a membership level"
+                            required>
+
+                            <option value="" disabled selected>
+                                Select a Membership Level
+                            </option>
+
+                            <option value="np">
+                                NP Membership
+                            </option>
+
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+
+                        </select>
+                    </label>
+
+                    <label>
+                        Business or Organization Description
+                        <textarea id="description"
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden"
+                        name="timestamp"
+                        id="timestamp">
+
+                    <input type="submit"
+                        value="Join the Chamber"
+                        class="submit-button">
+
+                </form>
+
+            </section>
+
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations.</p>
+                        <p class="membership-price">No Fee</p>
+
+                        <a href="#npDialog"
+                            class="membership-link"
+                            data-dialog="npDialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Essential benefits for local businesses.</p>
+                        <p class="membership-price">$100 / year</p>
+
+                        <a href="#bronzeDialog"
+                            class="membership-link"
+                            data-dialog="bronzeDialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Additional promotion and training benefits.</p>
+                        <p class="membership-price">$200 / year</p>
+
+                        <a href="#silverDialog"
+                            class="membership-link"
+                            data-dialog="silverDialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Our highest level of business support.</p>
+                        <p class="membership-price">$300 / year</p>
+
+                        <a href="#goldDialog"
+                            class="membership-link"
+                            data-dialog="goldDialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Membership Modals -->
+
+        <dialog id="npDialog">
+            <h3>NP Membership Benefits</h3>
+
+            <ul>
+                <li>No membership fee</li>
+                <li>Business directory listing</li>
+                <li>Access to networking events</li>
+                <li>Community event announcements</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+        <dialog id="bronzeDialog">
+            <h3>Bronze Membership Benefits</h3>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking events</li>
+                <li>Member training opportunities</li>
+                <li>Discounts on selected chamber events</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+        <dialog id="silverDialog">
+            <h3>Silver Membership Benefits</h3>
+
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Additional event discounts</li>
+                <li>Business training sessions</li>
+                <li>Eligibility for home page spotlights</li>
+                <li>Social media promotion</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+        <dialog id="goldDialog">
+            <h3>Gold Membership Benefits</h3>
+
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Priority home page spotlights</li>
+                <li>Premium advertising opportunities</li>
+                <li>Special event invitations</li>
+                <li>Priority sponsorship opportunities</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+            <strong>Chamber of Commerce</strong>
+            <p>123 Main Street</p>
+            <p>Santiago, Chile</p>
+            <p>info@chamber.org</p>
+            <p>+56 2 1234 5678</p>
+        </div>
+
+        <div class="development-info">
+
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                Chamber of Commerce
+            </p>
+
+            <p>Alejandro Cumana | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="lastModified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

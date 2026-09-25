@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Santiago Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Thank you for submitting your Santiago Chamber of Commerce membership application.">
+
+    <meta name="author" content="Alejandro Cumana">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="site-brand">
+
+            <img src="images/alien.svg"
+                alt="Chamber of Commerce logo"
+                width="80"
+                height="80">
+
+            <div>
+                <span class="site-name">
+                    Santiago Chamber of Commerce
+                </span>
+
+                <span class="site-description">
+                    Supporting Local Business
+                </span>
+            </div>
+
+        </div>
+
+        <button id="menuButton">☰ Menu</button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="thankyou-section">
+
+            <h1>Thank You!</h1>
+
+            <p>
+                Thank you for applying to join the Santiago
+                Chamber of Commerce.
+            </p>
+
+            <h2>Your Application Information</h2>
+
+            <dl class="application-details">
+
+                <dt>First Name</dt>
+                <dd id="displayFirstName"></dd>
+
+                <dt>Last Name</dt>
+                <dd id="displayLastName"></dd>
+
+                <dt>Email</dt>
+                <dd id="displayEmail"></dd>
+
+                <dt>Mobile Phone</dt>
+                <dd id="displayPhone"></dd>
+
+                <dt>Business or Organization</dt>
+                <dd id="displayOrganization"></dd>
+
+                <dt>Application Date</dt>
+                <dd id="displayTimestamp"></dd>
+
+            </dl>
+
+            <a href="index.html" class="return-home">
+                Return Home
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+
+            <strong>Chamber of Commerce</strong>
+
+            <p>123 Main Street</p>
+            <p>Santiago, Chile</p>
+            <p>info@chamber.org</p>
+            <p>+56 2 1234 5678</p>
+
+        </div>
+
+        <div class="development-info">
+
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                Chamber of Commerce
+            </p>
+
+            <p>Alejandro Cumana | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="lastModified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
