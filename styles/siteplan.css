@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #111827;
+    --secondary-color: #2563eb;
+    --background-color: #f8fafc;
+    --text-color: #1f2937;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Orbitron", Arial, sans-serif;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--white);
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.color-example {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.background {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid #cccccc;
+}
+
+.orbitron-example {
+    font-family: "Orbitron", Arial, sans-serif;
+}
+
+.roboto-example {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
