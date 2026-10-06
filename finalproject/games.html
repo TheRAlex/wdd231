@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Games | Gaming Hub</title>
+
+    <meta name="description"
+        content="Browse and filter the Gaming Hub game catalog by genre, platform, rating, and release year.">
+
+    <meta name="author" content="Alejandro Cumana">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Games | Gaming Hub">
+    <meta property="og:description"
+        content="Explore the Gaming Hub game catalog and discover games across different genres and platforms.">
+    <meta property="og:image"
+        content="https://theralex.github.io/wdd231/finalproject/images/neon-frontier.webp">
+    <meta property="og:url"
+        content="https://theralex.github.io/wdd231/finalproject/games.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/games.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/alien.svg"
+                alt="Gaming Hub logo"
+                width="48"
+                height="48">
+
+            <span class="site-name">Gaming Hub</span>
+        </div>
+
+        <button id="menu-button" type="button">
+            ☰ Menu
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="games.html" class="active">Games</a>
+            <a href="favorites.html">Favorites</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Explore Games</h1>
+
+        <p class="page-intro">
+            Search and filter the catalog to find games that match
+            your interests.
+        </p>
+
+        <section class="filter-panel">
+            <h2>Filter Games</h2>
+
+            <label>
+                Search
+                <input type="search"
+                    id="search-input"
+                    placeholder="Search by title">
+            </label>
+
+            <label>
+                Genre
+                <select id="genre-filter">
+                    <option value="all">
+                        All Genres
+                    </option>
+                </select>
+            </label>
+
+            <label>
+                Platform
+                <select id="platform-filter">
+                    <option value="all">
+                        All Platforms
+                    </option>
+                </select>
+            </label>
+        </section>
+
+        <p id="game-count"></p>
+
+        <p id="games-status"
+            class="status-message">
+            Loading games...
+        </p>
+
+        <section id="games"
+            class="game-grid">
+        </section>
+
+        <dialog id="game-dialog">
+
+            <h2 id="dialog-title"></h2>
+
+            <p id="dialog-description"></p>
+
+            <p>
+                <strong>Genre:</strong>
+                <span id="dialog-genre"></span>
+            </p>
+
+            <p>
+                <strong>Platform:</strong>
+                <span id="dialog-platform"></span>
+            </p>
+
+            <p>
+                <strong>Rating:</strong>
+                <span id="dialog-rating"></span>
+            </p>
+
+            <p>
+                <strong>Release Year:</strong>
+                <span id="dialog-year"></span>
+            </p>
+
+            <button id="close-dialog"
+                type="button"
+                class="action-button">
+                Close
+            </button>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Gaming Hub | Alejandro Cumana
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="last-modified"></span>
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="https://example.com"
+                target="_blank"
+                rel="noopener">
+                Project Demonstration Video
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

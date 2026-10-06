@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Neon Frontier",
+    "genre": "Action",
+    "platform": "PC",
+    "rating": 4.8,
+    "releaseYear": 2026,
+    "description": "Explore a futuristic city while completing missions and uncovering a hidden technological conspiracy.",
+    "image": "neon-frontier.webp"
+  },
+  {
+    "id": 2,
+    "title": "Crystal Odyssey",
+    "genre": "Adventure",
+    "platform": "PlayStation",
+    "rating": 4.6,
+    "releaseYear": 2025,
+    "description": "Travel across mysterious islands while solving puzzles and collecting ancient crystals.",
+    "image": "crystal-odyssey.webp"
+  },
+  {
+    "id": 3,
+    "title": "Titan League",
+    "genre": "Sports",
+    "platform": "Xbox",
+    "rating": 4.3,
+    "releaseYear": 2026,
+    "description": "Build a competitive team and compete in futuristic stadiums around the world.",
+    "image": "titan-league.webp"
+  },
+  {
+    "id": 4,
+    "title": "Emberfall",
+    "genre": "RPG",
+    "platform": "PC",
+    "rating": 4.9,
+    "releaseYear": 2025,
+    "description": "Create a hero, explore a fantasy kingdom, and determine the fate of a world threatened by ancient fire.",
+    "image": "emberfall.webp"
+  },
+  {
+    "id": 5,
+    "title": "Galaxy Drift",
+    "genre": "Racing",
+    "platform": "PlayStation",
+    "rating": 4.5,
+    "releaseYear": 2024,
+    "description": "Race high-speed vehicles through futuristic cities, asteroid fields, and alien worlds.",
+    "image": "galaxy-drift.webp"
+  },
+  {
+    "id": 6,
+    "title": "Pixel Raiders",
+    "genre": "Action",
+    "platform": "Nintendo Switch",
+    "rating": 4.4,
+    "releaseYear": 2025,
+    "description": "Battle colorful enemies and discover hidden treasures in a fast-paced pixel adventure.",
+    "image": "pixel-raiders.webp"
+  },
+  {
+    "id": 7,
+    "title": "Midnight Signal",
+    "genre": "Horror",
+    "platform": "PC",
+    "rating": 4.7,
+    "releaseYear": 2026,
+    "description": "Investigate a mysterious radio signal while exploring an abandoned research station.",
+    "image": "midnight-signal.webp"
+  },
+  {
+    "id": 8,
+    "title": "Kingdom Echoes",
+    "genre": "RPG",
+    "platform": "Xbox",
+    "rating": 4.6,
+    "releaseYear": 2024,
+    "description": "Lead a group of heroes through an ancient kingdom filled with forgotten ruins and dangerous enemies.",
+    "image": "kingdom-echoes.webp"
+  },
+  {
+    "id": 9,
+    "title": "Skybound",
+    "genre": "Adventure",
+    "platform": "Nintendo Switch",
+    "rating": 4.5,
+    "releaseYear": 2026,
+    "description": "Explore floating islands, discover hidden civilizations, and travel across the clouds.",
+    "image": "skybound.webp"
+  },
+  {
+    "id": 10,
+    "title": "Arena Zero",
+    "genre": "Strategy",
+    "platform": "PC",
+    "rating": 4.2,
+    "releaseYear": 2025,
+    "description": "Build defenses, manage resources, and command tactical units in competitive futuristic battles.",
+    "image": "arena-zero.webp"
+  },
+  {
+    "id": 11,
+    "title": "Iron Circuit",
+    "genre": "Racing",
+    "platform": "Xbox",
+    "rating": 4.4,
+    "releaseYear": 2025,
+    "description": "Compete in intense street races using customizable vehicles and challenging urban tracks.",
+    "image": "iron-circuit.webp"
+  },
+  {
+    "id": 12,
+    "title": "Lunar Farm",
+    "genre": "Simulation",
+    "platform": "Nintendo Switch",
+    "rating": 4.6,
+    "releaseYear": 2024,
+    "description": "Build and manage a peaceful farming colony on the moon while discovering new resources.",
+    "image": "lunar-farm.webp"
+  },
+  {
+    "id": 13,
+    "title": "Shadow Protocol",
+    "genre": "Action",
+    "platform": "PlayStation",
+    "rating": 4.7,
+    "releaseYear": 2026,
+    "description": "Complete stealth missions and uncover secrets inside a powerful international organization.",
+    "image": "shadow-protocol.webp"
+  },
+  {
+    "id": 14,
+    "title": "Rune Keepers",
+    "genre": "Strategy",
+    "platform": "PC",
+    "rating": 4.5,
+    "releaseYear": 2025,
+    "description": "Protect magical kingdoms by combining powerful runes and strategic defenses.",
+    "image": "rune-keepers.webp"
+  },
+  {
+    "id": 15,
+    "title": "Goal Rush",
+    "genre": "Sports",
+    "platform": "PlayStation",
+    "rating": 4.1,
+    "releaseYear": 2025,
+    "description": "Compete in fast-paced football matches and lead your team through championship tournaments.",
+    "image": "goal-rush.webp"
+  },
+  {
+    "id": 16,
+    "title": "Starforge",
+    "genre": "Simulation",
+    "platform": "Xbox",
+    "rating": 4.3,
+    "releaseYear": 2026,
+    "description": "Design spaceships, establish colonies, and manage resources across a developing star system.",
+    "image": "starforge.webp"
+  },
+  {
+    "id": 17,
+    "title": "Mistwood",
+    "genre": "Adventure",
+    "platform": "PC",
+    "rating": 4.8,
+    "releaseYear": 2024,
+    "description": "Explore an enchanted forest filled with unusual creatures, puzzles, and forgotten legends.",
+    "image": "mistwood.webp"
+  },
+  {
+    "id": 18,
+    "title": "Cyber Clash",
+    "genre": "Action",
+    "platform": "Nintendo Switch",
+    "rating": 4.5,
+    "releaseYear": 2026,
+    "description": "Battle rival teams in colorful cyber arenas using unique abilities and fast tactical combat.",
+    "image": "cyber-clash.webp"
+  }
+]

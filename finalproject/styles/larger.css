@@ -1,0 +1,69 @@
+@media (min-width: 40rem) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.8rem 1rem;
+    }
+
+    .hero {
+        padding: 3rem;
+    }
+
+    .featured-grid,
+    .game-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .filter-panel {
+        grid-template-columns:
+            2fr 1fr 1fr;
+        align-items: end;
+    }
+
+    .filter-panel h2 {
+        grid-column: 1 / -1;
+    }
+
+    .recommendation-section {
+        padding: 2rem;
+    }
+
+    .recommendation-form {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .submit-button {
+        width: max-content;
+    }
+}
+
+
+@media (min-width: 64rem) {
+
+    .featured-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .game-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+}

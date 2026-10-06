@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #111827;
+    --secondary-color: #2563eb;
+    --background-color: #f8fafc;
+    --text-color: #1f2937;
+    --white: #ffffff;
+    --light-gray: #e5e7eb;
+    --medium-gray: #6b7280;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+.site-name {
+    font-family: "Orbitron", Arial, sans-serif;
+}
+
+a {
+    color: #1d4ed8;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.site-brand img {
+    width: 48px;
+    height: 48px;
+}
+
+.site-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/* MENU */
+
+#menu-button {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.7rem;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+
+/* MAIN */
+
+main {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.page-intro {
+    max-width: 700px;
+}
+
+
+/* HERO */
+
+.hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 2rem 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    color: var(--white);
+    margin-top: 0.3rem;
+}
+
+.hero-label {
+    color: #bfdbfe;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+
+/* LINKS AND BUTTONS */
+
+.button-link,
+.action-button,
+.submit-button {
+    display: inline-block;
+    min-height: 44px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.secondary-link,
+.secondary-button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--white);
+}
+
+.game-card .secondary-button {
+    border-color: var(--primary-color);
+}
+
+.button-link:hover,
+.action-button:hover,
+.submit-button:hover {
+    filter: brightness(0.9);
+}
+
+
+/* FEATURED AND GAME GRID */
+
+.featured-section,
+.recommendation-section {
+    margin: 2rem 0;
+}
+
+.featured-grid,
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.game-card {
+    min-width: 0;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+.game-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.game-card-content {
+    padding: 1rem;
+}
+
+.game-card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.game-card p {
+    margin: 0.4rem 0;
+}
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+/* FILTERS */
+
+.filter-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-panel h2 {
+    margin: 0;
+}
+
+.filter-panel label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 700;
+}
+
+
+/* FORMS */
+
+.recommendation-section {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.recommendation-form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.recommendation-form label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.7rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--text-color);
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+
+/* STATUS */
+
+.status-message {
+    padding: 0.75rem 0;
+}
+
+.empty-state {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+/* DIALOG */
+
+dialog {
+    width: min(500px, 90%);
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: var(--text-color);
+}
+
+dialog h2 {
+    color: var(--primary-color);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 65%);
+}
+
+
+/* FORM ACTION */
+
+.result-card {
+    max-width: 650px;
+    margin: 2rem auto;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.result-card dl {
+    display: grid;
+    gap: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.result-card dt {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.result-card dd {
+    margin-left: 0;
+}
+
+
+/* ATTRIBUTIONS */
+
+.attributions {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+footer a {
+    color: var(--white);
+}
+
+
+/* KEYBOARD */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 3px;
+}

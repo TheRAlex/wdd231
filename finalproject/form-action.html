@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Preferences | Gaming Hub</title>
+
+    <meta name="description"
+        content="Review the game preferences submitted to Gaming Hub.">
+
+    <meta name="author" content="Alejandro Cumana">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title"
+        content="Game Preferences | Gaming Hub">
+    <meta property="og:description"
+        content="Review submitted Gaming Hub game preferences.">
+    <meta property="og:image"
+        content="https://theralex.github.io/wdd231/finalproject/images/neon-frontier.webp">
+    <meta property="og:url"
+        content="https://theralex.github.io/wdd231/finalproject/form-action.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/form-action.js"
+        type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/alien.svg"
+                alt="Gaming Hub logo"
+                width="48"
+                height="48">
+
+            <span class="site-name">Gaming Hub</span>
+        </div>
+
+        <button id="menu-button"
+            type="button">
+            ☰ Menu
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="favorites.html">Favorites</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="result-card">
+
+            <h1>Thank You!</h1>
+
+            <p>
+                We received your game preferences.
+            </p>
+
+            <dl>
+
+                <dt>Name</dt>
+                <dd id="result-name"></dd>
+
+                <dt>Email</dt>
+                <dd id="result-email"></dd>
+
+                <dt>Favorite Genre</dt>
+                <dd id="result-genre"></dd>
+
+                <dt>Preferred Platform</dt>
+                <dd id="result-platform"></dd>
+
+            </dl>
+
+            <a href="games.html"
+                class="button-link">
+                Explore Games
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Gaming Hub | Alejandro Cumana
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="last-modified"></span>
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="https://example.com"
+                target="_blank"
+                rel="noopener">
+                Project Demonstration Video
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

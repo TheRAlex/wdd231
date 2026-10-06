@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorites | Gaming Hub</title>
+
+    <meta name="description"
+        content="View and manage the video games you have saved as favorites on Gaming Hub.">
+
+    <meta name="author" content="Alejandro Cumana">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Favorites | Gaming Hub">
+    <meta property="og:description"
+        content="View and manage your saved favorite games on Gaming Hub.">
+    <meta property="og:image"
+        content="https://theralex.github.io/wdd231/finalproject/images/neon-frontier.webp">
+    <meta property="og:url"
+        content="https://theralex.github.io/wdd231/finalproject/favorites.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/favorites.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/alien.svg"
+                alt="Gaming Hub logo"
+                width="48"
+                height="48">
+
+            <span class="site-name">Gaming Hub</span>
+        </div>
+
+        <button id="menu-button" type="button">
+            ☰ Menu
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="favorites.html" class="active">
+                Favorites
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Your Favorite Games</h1>
+
+        <p class="page-intro">
+            Games saved here remain available between visits using
+            your browser's local storage.
+        </p>
+
+        <p id="favorites-status"
+            class="status-message">
+            Loading favorites...
+        </p>
+
+        <section id="favorite-games"
+            class="game-grid">
+        </section>
+
+        <dialog id="game-dialog">
+
+            <h2 id="dialog-title"></h2>
+
+            <p id="dialog-description"></p>
+
+            <p>
+                <strong>Genre:</strong>
+                <span id="dialog-genre"></span>
+            </p>
+
+            <p>
+                <strong>Platform:</strong>
+                <span id="dialog-platform"></span>
+            </p>
+
+            <p>
+                <strong>Rating:</strong>
+                <span id="dialog-rating"></span>
+            </p>
+
+            <p>
+                <strong>Release Year:</strong>
+                <span id="dialog-year"></span>
+            </p>
+
+            <button id="close-dialog"
+                type="button"
+                class="action-button">
+                Close
+            </button>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Gaming Hub | Alejandro Cumana
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="last-modified"></span>
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="https://example.com"
+                target="_blank"
+                rel="noopener">
+                Project Demonstration Video
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
